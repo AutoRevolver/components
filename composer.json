@@ -1,0 +1,15 @@
+{
+    "name": "revolver/components",
+    "authors": [
+        {
+            "name": "Xiaofu",
+            "email": "394992322@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.0"
+    },
+    "autoload": {
+        "psr-4": { "revolver\\components\\": "src/" }
+    }
+}
