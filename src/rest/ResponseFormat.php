@@ -130,12 +130,21 @@ class ResponseFormat extends Component
      */
     public function toArray()
     {
-        return [
-            'code' => $this->getCode(),
-            'message' => $this->getMessage(),
-            'data' => $this->getData(),
-            'enum' => $this->getEnum()
-        ];
+        if($this->getEnum()){
+            return [
+                'code' => $this->getCode(),
+                'message' => $this->getMessage(),
+                'data' => $this->getData(),
+                'enum' => $this->getEnum()
+            ];
+        }else{
+            return [
+                'code' => $this->getCode(),
+                'message' => $this->getMessage(),
+                'data' => $this->getData()
+            ];
+        }
+
     }
 
     /**
