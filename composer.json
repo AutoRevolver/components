@@ -1,15 +1,18 @@
 {
     "name": "revolver/components",
+    "description": "The base code for the AutoRevolver System",
+    "type": "library",
     "authors": [
         {
-            "name": "Xiaofu",
+            "name": "xiaofu",
             "email": "394992322@qq.com"
         }
     ],
     "require": {
-        "yiisoft/yii2": ">=2.0.0"
-    },
-    "autoload": {
+		"php": ">=5.5.0",
+		"yiisoft/yii2": ">=2.0.12",
+	},
+	"autoload": {
         "psr-4": { "revolver\\components\\": "src/" }
     }
 }
