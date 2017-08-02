@@ -2,7 +2,7 @@
 
 namespace revolver\components\db;
 
-use app\components\service\ServiceException;
+use revolver\components\service\ServiceException;
 use ArrayObject;
 use ReflectionClass;
 use yii\base\InvalidConfigException;

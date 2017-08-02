@@ -1,5 +1,5 @@
 <?php
-namespace app\components\tools;
+namespace revolver\components\tools;
 
 class Enum
 {
