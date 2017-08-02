@@ -176,8 +176,8 @@ class Form extends Model
     {
         $validator = null;
 
-        if (class_exists('app\components\validators\Box')) {
-            $validator = call_user_func(['app\components\validators\Box', 'get'], $name);
+        if (class_exists('revolver\components\validators\Box')) {
+            $validator = call_user_func(['revolver\components\validators\Box', 'get'], $name);
 
         }
 
