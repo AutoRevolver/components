@@ -11,7 +11,7 @@
     ],
     "require": {
 		"php": ">=5.5.0",
-		"yiisoft/yii2": ">=2.0.12",
+		"yiisoft/yii2": ">=2.0.12"
 	},
 	"autoload": {
         "psr-4": { "revolver\\components\\": "src/" }
