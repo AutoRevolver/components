@@ -31,12 +31,13 @@ class EditService extends BaseService
     }
 
 
-    public function update($data = null){
+    public function update($id = null, $data = null){
 
+        if(null === $id) $id = $this->form-id;
         if(null === $data) $data = $this->form->toArray();
 
         $M = $this->getDefauleModel();
-        $AR = $M::findOne($this->form->id);
+        $AR = $M::findOne($id);
         $ok = false;
         if($AR){
             $this->setUpdateAttributes($AR, $data);
