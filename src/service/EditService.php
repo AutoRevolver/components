@@ -14,7 +14,8 @@ class EditService extends BaseService
 {
 
 
-    public function create($data = null){
+    public function create($data = null)
+    {
 
         if(null === $data) $data = $this->form->toArray();
 
@@ -31,7 +32,8 @@ class EditService extends BaseService
     }
 
 
-    public function update($id = null, $data = null){
+    public function update($id = null, $data = null)
+    {
 
         if(null === $id) $id = $this->form-id;
         if(null === $data) $data = $this->form->toArray();
